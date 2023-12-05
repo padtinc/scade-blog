@@ -1,0 +1,44 @@
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2023 R2 (build 20230526T185112) **************
+** Generation date: 2023-12-01T12:00:57
+** Command: scade -code "C:\Users\noah.asherbranner\Documents\SCADE-BLOG\Part-1\SCADE-BLOG.etp" -root servocontrol -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\servocontrol.c, line 0, character 0
+ ~servocontrol.c
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\Operator1.c, line 0, character 0
+ ~Operator1.c
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\servocontrol.h, line 0, character 0
+ ~servocontrol.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\Operator1.h, line 0, character 0
+ ~Operator1.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_xml_filter_out.scade, line 0, character 0
+ ~kcg_xml_filter_out.scade
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\noah.asherbranner\Documents\SCADE-BLOG\SCADE-Gen-Code\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+$************** ANSYS(R) SCADE Suite(R) - SCADETOC - Version 2023 R2 (build 20230526T185112) **************
+** Generation date: 2023-12-01T12:00:59
+** sc2c.log
+*************************************************************$

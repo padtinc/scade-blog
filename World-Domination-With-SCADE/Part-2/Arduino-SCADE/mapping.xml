@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$********** SCADE Suite KCG 32-bit 6.6.4 (build i3) **********
+** Command: kcg664.exe -config C:/Users/noah.asherbranner/Documents/SCADE-BLOG/SCADE-Gen-Code/config.txt
+** Generation date: 2023-12-01T12:00:58
+*************************************************************$-->
+<mapping>
+  <config>
+    <option name="use_types" value="#off#"/>
+    <option name="imported_root_package" value="#off#"/>
+    <option name="root_package" value="#off#"/>
+    <option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <option name="state_vector" value="#off#"/>
+    <option name="static" value="#off#"/>
+    <option name="separate_io_all" value="#off#"/>
+    <option name="no_separate_io" value="#off#"/>
+    <option name="separate_io" value="#off#"/>
+    <option name="warn_error" value="#off#"/>
+    <option name="short_circuit" value="#off#"/>
+    <option name="wrap_c_ops" value="#off#"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libverif/libverif.xscade"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libpwlinear/lut.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/liblinear/filters.xscade"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/liblinear/linear.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libdigital/TruthTables.xscade"/>
+    <option name="input_file" value="C:/Program Files/ANSYS Inc/v232/SCADE/SCADE/libraries/SC65/libdigital/digital.xscade"/>
+    <option name="input_file" value="C:/Users/noah.asherbranner/Documents/SCADE-BLOG/Part-1/Operator1.xscade"/>
+    <option name="input_file" value="C:/Users/noah.asherbranner/Documents/SCADE-BLOG/Part-1/servocontrol.xscade"/>
+    <option name="probes" value="#off#"/>
+    <option name="debug" value="#off#"/>
+    <option name="no_observe" value="#off#"/>
+    <option name="observe" value="#off#"/>
+    <option name="user_config" value="./user_macros.h"/>
+    <option name="input_threshold" value="#off#"/>
+    <option name="header" value="#off#"/>
+    <option name="significance_length" value="31"/>
+    <option name="name_length" value="200"/>
+    <option name="globals_prefix" value="#off#"/>
+    <option name="keep_asserts" value="#off#"/>
+    <option name="global_root_context" value="#off#"/>
+    <option name="expall" value="#off#"/>
+    <option name="noexp" value="#off#"/>
+    <option name="exp" value="#off#"/>
+    <option name="target_dir" value="C:/Users/noah.asherbranner/Documents/SCADE-BLOG/SCADE-Gen-Code"/>
+    <option name="target" value="C"/>
+    <option name="root" value="servocontrol"/>
+    <option name="auth" value="#off#"/>
+  </config>
+  <model>
+    <array id="1" baseType="4" size="3"/>
+    <array id="2" baseType="7" size="3"/>
+    <predefType id="3" name="bool"/>
+    <predefType id="4" name="char"/>
+    <predefType id="5" name="int8"/>
+    <predefType id="6" name="int16"/>
+    <predefType id="7" name="int32"/>
+    <predefType id="8" name="int64"/>
+    <predefType id="9" name="uint8"/>
+    <predefType id="10" name="uint16"/>
+    <predefType id="11" name="uint32"/>
+    <predefType id="12" name="uint64"/>
+    <predefType id="13" name="float32"/>
+    <predefType id="14" name="float64"/>
+    <predefType id="15" name="size"/>
+    <operator id="16" name="servocontrol" imported="false" root="true" expanded="false">
+      <input id="17" name="input" clock="false" type="1"/>
+      <output id="18" name="output" clock="false" type="2"/>
+      <iterator id="19" kind="map" size="3">
+        <instance id="20" op="21" expanded="false"/>
+      </iterator>
+    </operator>
+    <operator id="21" name="Operator1" imported="false" root="false" expanded="false">
+      <input id="22" name="Input1" clock="false" type="4"/>
+      <output id="23" name="Output1" clock="false" type="7"/>
+    </operator>
+    <package id="24" name="digital"/>
+    <package id="25" name="truthtables">
+      <enum id="26" name="TruthTableValues">
+        <value id="27" name="T" default="false"/>
+        <value id="28" name="F" default="false"/>
+        <value id="29" name="X" default="false"/>
+      </enum>
+    </package>
+    <package id="30" name="linear"/>
+    <package id="31" name="filters"/>
+    <package id="32" name="vect"/>
+    <package id="33" name="math"/>
+    <package id="34" name="pwlinear"/>
+    <package id="35" name="lut"/>
+    <package id="36" name="verif"/>
+  </model>
+  <generated>
+    <c>
+      <file id="37" name="servocontrol.h">
+        <function id="38" name="servocontrol_init">
+          <parameter id="39" name="outC" type="45" pointer="true"/>
+        </function>
+        <function id="40" name="servocontrol_reset">
+          <parameter id="41" name="outC" type="45" pointer="true"/>
+        </function>
+        <function id="42" name="servocontrol">
+          <parameter id="43" name="inC" type="47" pointer="true"/>
+          <parameter id="44" name="outC" type="45" pointer="true"/>
+        </function>
+        <struct id="45" name="outC_servocontrol">
+          <field id="46" name="output" type="63" pointer="false"/>
+        </struct>
+        <struct id="47" name="inC_servocontrol">
+          <field id="48" name="input" type="64" pointer="false"/>
+        </struct>
+      </file>
+      <file id="49" name="Operator1.h">
+        <function id="50" name="Operator1" returnType="94">
+          <parameter id="51" name="Input1" type="104" pointer="false"/>
+        </function>
+      </file>
+      <file id="52" name="kcg_types.h">
+        <ifdef id="53" name="kcg_use_array_char_3">
+          <function id="54" name="kcg_comp_array_char_3" returnType="103">
+            <parameter id="59" name="kcg_c1" type="64" pointer="true"/>
+            <parameter id="60" name="kcg_c2" type="64" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="57" name="kcg_use_array_int32_3">
+          <function id="58" name="kcg_comp_array_int32_3" returnType="103">
+            <parameter id="59" name="kcg_c1" type="63" pointer="true"/>
+            <parameter id="60" name="kcg_c2" type="63" pointer="true"/>
+          </function>
+        </ifdef>
+        <macro id="61" name="kcg_copy_array_char_3"/>
+        <macro id="62" name="kcg_copy_array_int32_3"/>
+        <array id="63" name="array_int32_3" baseType="94" size="3"/>
+        <array id="64" name="array_char_3" baseType="104" size="3"/>
+        <enum id="65" name="TruthTableValues_truthtables" tagName="kcg_tag_TruthTableValues_truthtables">
+          <value id="66" name="T_truthtables"/>
+          <value id="67" name="F_truthtables"/>
+          <value id="68" name="X_truthtables"/>
+        </enum>
+        <macro id="69" name="kcg_assign_array"/>
+        <macro id="70" name="kcg_assign_struct"/>
+        <macro id="71" name="kcg_lnot_uint8"/>
+        <macro id="72" name="kcg_lnot_uint16"/>
+        <macro id="73" name="kcg_lnot_uint32"/>
+        <macro id="74" name="kcg_lnot_uint64"/>
+        <macro id="75" name="kcg_lsl_uint8"/>
+        <macro id="76" name="kcg_lsl_uint16"/>
+        <macro id="77" name="kcg_lsl_uint32"/>
+        <macro id="78" name="kcg_lsl_uint64"/>
+        <macro id="79" name="kcg_true"/>
+        <macro id="80" name="kcg_false"/>
+        <macro id="81" name="kcg_lit_int8"/>
+        <macro id="82" name="kcg_lit_int16"/>
+        <macro id="83" name="kcg_lit_int32"/>
+        <macro id="84" name="kcg_lit_int64"/>
+        <macro id="85" name="kcg_lit_uint8"/>
+        <macro id="86" name="kcg_lit_uint16"/>
+        <macro id="87" name="kcg_lit_uint32"/>
+        <macro id="88" name="kcg_lit_uint64"/>
+        <macro id="89" name="kcg_lit_size"/>
+        <macro id="90" name="kcg_lit_float64"/>
+        <macro id="91" name="kcg_lit_float32"/>
+        <predefType id="92" name="kcg_int8"/>
+        <predefType id="93" name="kcg_int16"/>
+        <predefType id="94" name="kcg_int32"/>
+        <predefType id="95" name="kcg_int64"/>
+        <predefType id="96" name="kcg_uint8"/>
+        <predefType id="97" name="kcg_uint16"/>
+        <predefType id="98" name="kcg_uint32"/>
+        <predefType id="99" name="kcg_uint64"/>
+        <predefType id="100" name="kcg_size"/>
+        <predefType id="101" name="kcg_float64"/>
+        <predefType id="102" name="kcg_float32"/>
+        <predefType id="103" name="kcg_bool"/>
+        <predefType id="104" name="kcg_char"/>
+        <macro id="105" name="KCG_MAPW_CPY"/>
+      </file>
+      <file id="106" name="kcg_consts.h"/>
+      <file id="107" name="kcg_sensors.h"/>
+    </c>
+    <map srcId="101" dstId="90" role="wrapped-lit"/>
+    <map srcId="102" dstId="91" role="wrapped-lit"/>
+    <map srcId="100" dstId="89" role="wrapped-lit"/>
+    <map srcId="99" dstId="88" role="wrapped-lit"/>
+    <map srcId="99" dstId="74" role="wrapped-lnot"/>
+    <map srcId="99" dstId="78" role="wrapped-lsl"/>
+    <map srcId="98" dstId="87" role="wrapped-lit"/>
+    <map srcId="98" dstId="73" role="wrapped-lnot"/>
+    <map srcId="98" dstId="77" role="wrapped-lsl"/>
+    <map srcId="97" dstId="86" role="wrapped-lit"/>
+    <map srcId="97" dstId="72" role="wrapped-lnot"/>
+    <map srcId="97" dstId="76" role="wrapped-lsl"/>
+    <map srcId="96" dstId="85" role="wrapped-lit"/>
+    <map srcId="96" dstId="71" role="wrapped-lnot"/>
+    <map srcId="96" dstId="75" role="wrapped-lsl"/>
+    <map srcId="95" dstId="84" role="wrapped-lit"/>
+    <map srcId="94" dstId="83" role="wrapped-lit"/>
+    <map srcId="93" dstId="82" role="wrapped-lit"/>
+    <map srcId="92" dstId="81" role="wrapped-lit"/>
+    <map srcId="64" dstId="53" role="type-use"/>
+    <map srcId="64" dstId="54" role="type-comparison"/>
+    <map srcId="64" dstId="61" role="type-copy"/>
+    <map srcId="63" dstId="57" role="type-use"/>
+    <map srcId="63" dstId="58" role="type-comparison"/>
+    <map srcId="63" dstId="62" role="type-copy"/>
+  </generated>
+  <map modelId="29" generatedId="68"/>
+  <map modelId="28" generatedId="67"/>
+  <map modelId="27" generatedId="66"/>
+  <map modelId="16" generatedId="39" role="context-parameter"/>
+  <map modelId="16" generatedId="38" role="init-method"/>
+  <map modelId="16" generatedId="41" role="context-parameter"/>
+  <map modelId="16" generatedId="40" role="reset-method"/>
+  <map modelId="16" generatedId="43" role="input-struct-parameter"/>
+  <map modelId="17" generatedId="48"/>
+  <map modelId="16" generatedId="47" role="input-struct-type"/>
+  <map modelId="16" generatedId="44" role="context-parameter"/>
+  <map modelId="18" generatedId="46"/>
+  <map modelId="16" generatedId="45" role="context-type"/>
+  <map modelId="16" generatedId="37" role="interface-file"/>
+  <map modelId="16" generatedId="42" role="cycle-method"/>
+  <map modelId="22" generatedId="51"/>
+  <map modelId="21" generatedId="49" role="interface-file"/>
+  <map modelId="21" generatedId="50" role="cycle-method"/>
+  <map modelId="26" generatedId="65"/>
+  <map modelId="1" generatedId="64"/>
+  <map modelId="2" generatedId="63"/>
+  <map modelId="4" generatedId="104"/>
+  <map modelId="3" generatedId="103"/>
+  <map modelId="14" generatedId="101"/>
+  <map modelId="13" generatedId="102"/>
+  <map modelId="15" generatedId="100"/>
+  <map modelId="12" generatedId="99"/>
+  <map modelId="11" generatedId="98"/>
+  <map modelId="10" generatedId="97"/>
+  <map modelId="9" generatedId="96"/>
+  <map modelId="8" generatedId="95"/>
+  <map modelId="7" generatedId="94"/>
+  <map modelId="6" generatedId="93"/>
+  <map modelId="5" generatedId="92"/>
+</mapping>
+<!--$********** SCADE Suite KCG 32-bit 6.6.4 (build i3) **********
+** mapping.xml
+** Generation date: 2023-12-01T12:00:58
+*************************************************************$-->
